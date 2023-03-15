@@ -10,7 +10,7 @@ void intro()
 		for (int i = 0; i < 120; i++)
 		{
 			std::cout << '-';
-			Sleep(1);
+			Sleep(0.5);
 			
 		}
 		if (j == 12)
@@ -18,7 +18,7 @@ void intro()
 			for (int k = 0; k < 52; k++)
 			{
 				std::cout << '-';
-				Sleep(1);
+				Sleep(0.5);
 			}
 			std::cout << 'C';
 			Sleep(100);
@@ -55,7 +55,7 @@ void intro()
 			for (int k = 0; k < 52; k++)
 			{
 				std::cout << '-';
-				Sleep(1);
+				Sleep(0.5);
 			}
 		}
 		std::cout << std::endl;
