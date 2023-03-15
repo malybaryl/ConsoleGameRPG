@@ -60,6 +60,12 @@ bool check_gold_tavern(int& hero_GOLD)
 		return true;
 	else return false;
 }
+bool check_if_lose(int hero_HP)
+{
+	if (hero_HP <= 0)
+		return true;
+	else return false;
+}
 
 
 

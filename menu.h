@@ -9,4 +9,6 @@ void menu_eng();
 
 void menu_pol();
 
+void lose_menu();
+
 #endif 

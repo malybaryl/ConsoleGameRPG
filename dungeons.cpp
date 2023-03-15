@@ -46,7 +46,7 @@ void dungeon_1_5(std::string Hero_class, int& hero_lvl, int& hero_EXP, int& hero
 			{
 				system("CLS");
 				std::cout << "YOU LOSE" << std::endl;
-				Sleep(2000);
+				Sleep(4000);
 				system("CLS");
 				break;
 			}
@@ -106,7 +106,7 @@ void dungeon_1_5(std::string Hero_class, int& hero_lvl, int& hero_EXP, int& hero
 			{
 				system("CLS");
 				std::cout << "YOU LOSE" << std::endl;
-				Sleep(2000);
+				Sleep(4000);
 				system("CLS");
 				break;
 			}
