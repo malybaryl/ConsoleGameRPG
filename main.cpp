@@ -39,59 +39,11 @@ int main()
 			std::cin >> choice;
 			if (choice == 1)
 			{
-			system("CLS");
-				int class_choice;
-				new_game();
-				std::cin >> class_choice;
-				system("CLS");
-				if (class_choice == 1)
-				{
-					while (true)
-					{
-						bool check_lose = check_if_lose(hero.HP);
-						
-						if (check_lose == true)
-						{
-							lose_menu();
-							break;
-						}
-						else
-						{
-							int town_doing;
-							town();
-							std::cin >> town_doing;
-							if (town_doing == 1)
-							{
-								dungeon_1_5(hero.CLA, hero.lvl, hero.EXP, hero.EXP_MAX, hero.HP, hero.HP_MAX, hero.BUI, hero.STR, hero.GOLD, hero.MIN_DMG, hero.MAX_DMG);
-							}
-							else if (town_doing == 2)
-							{
-								show_statistic(hero.CLA, hero.lvl, hero.EXP, hero.EXP_MAX, hero.HP, hero.HP_MAX, hero.BUI, hero.STR, hero.GOLD, hero.MIN_DMG, hero.MAX_DMG);
-							}
-							else if (town_doing == 3)
-							{
-								system("CLS");
-								bool tavern_gold = check_gold_tavern(hero.GOLD);
-								if (tavern_gold == true)
-								{
-									hero.GOLD -= 10;
-									hero.HP = hero.HP_MAX;
-									system("CLS");
-								}
-								else
-								{
-									std::cout << "YOU DONT HAVE ENOUGH MONEY" << std::endl;
-									Sleep(2000);
-									system("CLS");
-
-								}
-							}
-							lvl_system(hero.lvl, hero.EXP, hero.EXP_MAX, hero.STR, hero.BUI, hero.HP_MAX, hero.MIN_DMG_p, hero.MAX_DMG_p, hero.MIN_DMG, hero.MAX_DMG);
-						}
-					}
-					
-				}
-				break;
+				game_ENG(hero.CLA, hero.lvl, hero.EXP, hero.EXP_MAX, hero.HP, hero.HP_MAX, hero.BUI, hero.STR, hero.GOLD, hero.MIN_DMG, hero.MAX_DMG, hero.MIN_DMG, hero.MAX_DMG, hero.MIN_DMG_p, hero.MAX_DMG_p);
+			}
+			else if (choice == 2)
+			{
+				load_game();
 			}
 			else if (choice == 4)
 			{

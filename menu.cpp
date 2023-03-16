@@ -88,7 +88,7 @@ void intro()
 		Sleep(0.8);
 		std::cout << '.';
 		Sleep(0.8);
-		std::cout << '5';
+		std::cout << '6';
 		Sleep(0.8);
 		std::cout << '-';
 		Sleep(0.8);
